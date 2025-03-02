@@ -1,0 +1,109 @@
+body {
+    font-size: .875rem;
+    background-color: #f8f9fa;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 48px 0 0;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.sidebar-heading {
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #333;
+}
+
+.nav-link.active {
+    color: #2470dc;
+}
+
+.azure-setting {
+    display: none;
+}
+
+#fileList .file-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+#fileList .file-item .file-name {
+    flex-grow: 1;
+    margin-right: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#fileList .file-item .remove-file {
+    cursor: pointer;
+    color: #dc3545;
+}
+
+#resultsJson {
+    max-height: 500px;
+    overflow-y: auto;
+    font-family: monospace;
+    font-size: 0.9rem;
+}
+
+.usage-card {
+    margin-bottom: 10px;
+    border-left: 4px solid #0d6efd;
+}
+
+.usage-card .card-header {
+    background-color: rgba(13, 110, 253, 0.1);
+    font-weight: 500;
+}
+
+.usage-metric {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.usage-metric-label {
+    color: #6c757d;
+}
+
+.template-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.template-item:hover {
+    background-color: rgba(13, 110, 253, 0.1);
+}
+
+.template-item .delete-template {
+    visibility: hidden;
+}
+
+.template-item:hover .delete-template {
+    visibility: visible;
+}
+
+.template-info {
+    font-size: 0.75rem;
+    color: #6c757d;
+    font-style: italic;
+} 
